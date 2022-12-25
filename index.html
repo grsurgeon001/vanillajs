@@ -4,9 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chrome app</title>
+    <link rel="stylesheet" href="style.css">
+    <title>ILMIN chrome app</title>
 </head>
 <body>
-    
+    <form class="login-form">
+        <input class = "login-form__input" required type="text" maxlength="15" placeholder="What's your name"/>
+        <input class = "login-form__submit" value = "Log In" type="submit"/>
+    </form>
+    <h1 class = "greetings hidden"></h1>
+    <h2 class = "clock hidden">00:00:00</h2>
+
+    <script src = "app.js"></script>
+    <script src = "greetings.js"></script>
 </body>
 </html>
