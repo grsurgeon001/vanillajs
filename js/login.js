@@ -1,15 +1,23 @@
+const prelogin = document.querySelector(".pre-login");
+const loggedIn = document.querySelector(".logged-in");
 const loginForm = document.querySelector(".login-form");
 const loginInput = document.querySelector(".login-form__input");
 const loginSubmit = document.querySelector(".login-form__submit");
 
-
+const loggedInUsername = localStorage.getItem("username");
 
 const handleLoginSubmit = (event) => {
     event.preventDefault();
-    const name = loginInput.value;
-    localStorage.setItem("name",name);
-    loginForm.classList.add("hidden");
-    greeting(name);
+    const username = loginInput.value;
+    localStorage.setItem("username",username);
+    location.reload(true);
 }
 
-loginForm.addEventListener("submit",handleLoginSubmit);
+if (loggedInUsername !== null){
+    prelogin.classList.add("hidden");
+    loggedIn.classList.remove("hidden");    
+    greeting_fx(loggedInUsername);
+
+} else {
+    loginForm.addEventListener("submit",handleLoginSubmit);
+}
