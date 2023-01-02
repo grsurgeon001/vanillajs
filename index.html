@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,29 +8,39 @@
     <link rel="stylesheet" href="style.css">
     <title>ILMIN chrome app</title>
 </head>
+
 <body>
-    <div class = "pre-login">
+    <div class="pre-login">
         <form class="login-form">
-            <input class = "login-form__input" required type="text" maxlength="15" placeholder="What's your name"/>
-            <input class = "login-form__submit" value = "Log In" type="submit"/>
-        </form>  
+            <input class="login-form__input" required type="text" maxlength="15" placeholder="What's your name" />
+            <input class="login-form__submit" value="Log In" type="submit" />
+        </form>
     </div>
     <main class="logged-in hidden">
-        <h1 class = "greetings"></h1>
-        <h2 class = "clock">00:00:00</h2>
-        <div class = "todos">
+        <h1 class="greetings"></h1>
+        <h2 class="clock">00:00:00</h2>
+        <div class="todos">
             <form class="todos-form">
-                <input class="todos-input" placeholder="할 일을 입력하세요." type="text" required/>
+                <input class="todos-input" placeholder="할 일을 입력하세요." type="text" required />
                 <input class="todos-submit" type="submit" value="입력">
             </form>
+        </div>
+        <div class="advice">
+            <h4 class="advice_message"></h4>
+            <small class="advice_author"></small>
+            <small>-</small>
+            <small class="advice_author_profile"></small>
+            <small>-</small>
         </div>
     </main>
 
     <!-- js link -->
-    <script src = "js/bg-image.js"></script>
-    <script src = "js/k-advice.js"></script>
-    <script src = "js/clock.js"></script>
-    <script src = "js/greetings.js"></script>
-    <script src = "js/login.js"></script>
+    <script src="js/bg-image.js"></script>
+    <script src="js/k-advice.js"></script>
+    <script src="js/advice.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/greetings.js"></script>
+    <script src="js/login.js"></script>
 </body>
+
 </html>
