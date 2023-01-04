@@ -10,7 +10,7 @@ function onGeoOk(position){
         const city = data.name;
         const weather = data.weather[0].main;
         const temp = data.main.temp;
-        weather_h6.innerText = `${weather}/${city}/${temp}`;
+        weather_h6.innerText = `${weather}/${city}/${temp}°C`;
     });
 }
 function onGeoError(){
