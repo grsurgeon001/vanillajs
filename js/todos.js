@@ -39,6 +39,7 @@ function saveNewTodo(event){
     todolist.push(todos_item);
     localStorage.setItem("todos",JSON.stringify(todolist));
     paintTodo(new_todo,todos_item._id);
+    todosInput.value = "";
 }
 
 function deleteToDo(event){

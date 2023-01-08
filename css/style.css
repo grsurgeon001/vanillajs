@@ -73,11 +73,11 @@ input[type="submit"]:hover{
     align-items: center;
 }
 .clock{  
-    font-size : 150px;
+    font-size : 100px;
     color : rgba(255,255,255,0.8);
 }
 .greetings{
-    font-size : 70px;
+    font-size : 40px;
     color : rgba(255,255,255,0.8);
 }
 .todos{
