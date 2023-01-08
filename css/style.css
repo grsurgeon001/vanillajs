@@ -59,9 +59,15 @@ input[type="submit"]:hover{
 .login-form__input{
     font-size: 50px;
 }
+.todos-input{
+    font-size: 25px;
+}
 
 .login-form__submit{
     font-size: 40px;
+}
+.todos-submit{
+    font-size: 20px;
 }
 .clock-greetings{
     z-index: -1;
@@ -82,27 +88,32 @@ input[type="submit"]:hover{
 }
 .todos{
     background-color: rgba(255,255,255,0.2);
-    width : 300px;
+    width : 600px;
     height : auto;
     display : flex;
     flex-direction: column-reverse;
     justify-content: flex-start;
     align-items: flex-start;
-    position:fixed;
+    position:absolute;
     right : 30px;
-    bottom : 20px;
+    bottom : -800px;
+}
+.todos-input{
+    width :400px;
 }
 .todo-list__ul{
+    font-size: 25px;
     list-style:none;
 }
 .advice{
+    font-size: 30px;
     color : rgba(255,255,255,0.8);
-    position:fixed;
+    position:absolute;
     left : 30px;
-    bottom : 20px;
+    bottom : -800px;
  }
  .advice small{
-    font-size: 7px;
+    font-size: 15px;
     color : rgba(255,255,255,0.3);
  }
 .weather{
