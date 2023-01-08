@@ -7,7 +7,7 @@ body{
 body{
     position: relative;
     color: white;
-    height: 100vh;
+    height: auto;
     width: auto;
     background-repeat: no-repeat;
     background-position: center;
@@ -90,7 +90,7 @@ input[type="submit"]:hover{
     align-items: flex-start;
     position:absolute;
     right : 30px;
-    bottom : 20px;
+    bottom : -280px;
 }
 .todo-list__ul{
     list-style:none;
@@ -99,7 +99,7 @@ input[type="submit"]:hover{
     color : rgba(255,255,255,0.8);
     position:absolute;
     left : 30px;
-    bottom : 20px;
+    bottom : -280px;
  }
  .advice small{
     font-size: 7px;
