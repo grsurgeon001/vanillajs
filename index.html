@@ -5,43 +5,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>ILMIN chrome app</title>
 </head>
 
 <body>
-    <div class="pre-login">
-        <form class="login-form">
-            <input class="login-form__input" required type="text" maxlength="15" placeholder="What's your name" />
-            <input class="login-form__submit" value="Log In" type="submit" />
-        </form>
-    </div>
-    <main class="logged-in hidden">
-        <h1 class="greetings"></h1>
-        <h2 class="clock">00:00:00</h2>
-        <div class="todos">
-            <form class="todos-form">
-                <input class="todos-input" placeholder="New Todo" type="text" required />
-                <input class="todos-submit" type="submit" value="Register">
+    <div class="whole-wrap">
+        <div class="pre-login flexbox-center">
+            <form class="login-form">
+                <input class="login-form__input" required type="text" maxlength="15" placeholder="What's your name?" />
+                <input class="login-form__submit" value="LogIn" type="submit" />
             </form>
-            <hr>
-            <div class="todo-list">
-                <ul class="todo-list__ul">
-                </ul>
+        </div> 
+        
+        <main class="logged-in hidden">
+            <div class="clock-greetings flexbox-center">
+                <h1 class="clock"></h1> 
+                <h3 class="greetings"></h3>
             </div>
-        </div>
-        <div class="advice">
-            <h4 class="advice_message"></h4>
-            <small class="advice_author"></small>
-            <small>-</small>
-            <small class="advice_author_profile"></small>
-            <small>-</small>
-        </div>
-        <div class="weather">
-            <h6></h6>
-        </div>
-    </main>
-
+            <div class = "side-functions">
+                <div class="todos">
+                    <form class="todos-form">
+                        <input class="todos-input" placeholder="New Todo" type="text" required maxlength="30"/>
+                        <input class="todos-submit" type="submit" value="Register">
+                    </form>
+                    <div class="todo-list">
+                        <ul class="todo-list__ul">
+                        </ul>
+                    </div>
+                </div>
+                <div class="advice">
+                    <h4 class="advice_message"></h4>
+                    <small class="advice_author"></small>
+                    <small>-</small>
+                    <small class="advice_author_profile"></small>
+                    <small>-</small>
+                </div>
+                <div class="weather">
+                    <h6></h6>
+                </div>  
+            </div>
+        </main>
+    </div>
     <!-- js link -->
     <script src="js/bg-image.js"></script>
     <script src="js/k-advice.js"></script>

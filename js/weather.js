@@ -1,6 +1,5 @@
 const API_KEY = "7fcd9b8c402d27defc2630eec49b8a25"
 const weather_h6 = document.querySelector(".weather h6");
-console.log(weather_h6)
 
 function onGeoOk(position){
     const lat = position.coords.latitude;

@@ -1,0 +1,121 @@
+html,
+body{
+    height: 100%;
+    width:100%;
+    margin:0;
+}
+body{
+    position: relative;
+    color: white;
+    height: 100vh;
+    width: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover ;
+}
+button {
+    background-color: transparent;
+    border :none;
+}
+button:hover{
+    cursor:pointer;
+}
+input{
+    color : white;
+    opacity : 0.7;
+    border-style: none;
+    border-bottom: 2px solid white;
+    background-color: transparent;
+} 
+input:focus{
+    outline: none;
+}
+input::placeholder{
+    color : white;
+    opacity : 0.7;
+}
+input[type="submit"]{
+    color : white;
+    opacity : 0.8;
+    border-style: none;
+    background-color: rgba(255,255,255,0.3);
+}
+input[type="submit"]:hover{
+    cursor:pointer;
+}
+
+.logged-in,
+.pre-login{
+    position : static;
+    height : 100%;
+    width : 100%;
+}
+.side-functions{
+    /* position:absolute; */
+    height : 100%;
+    width : 100%;
+    /* bottom : -200px; */
+}
+.login-form__input{
+    font-size: 50px;
+}
+
+.login-form__submit{
+    font-size: 40px;
+}
+.clock-greetings{
+    z-index: -1;
+}
+.flexbox-center{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.clock{  
+    font-size : 100px;
+    color : rgba(255,255,255,0.8);
+}
+.greetings{
+    font-size : 40px;
+    color : rgba(255,255,255,0.8);
+}
+.todos{
+    background-color: rgba(255,255,255,0.2);
+    width : 300px;
+    height : auto;
+    display : flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position:absolute;
+    right : 30px;
+    bottom : 20px;
+}
+.todo-list__ul{
+    list-style:none;
+}
+.advice{
+    color : rgba(255,255,255,0.8);
+    position:absolute;
+    left : 30px;
+    bottom : 20px;
+ }
+ .advice small{
+    font-size: 7px;
+    color : rgba(255,255,255,0.3);
+ }
+.weather{
+    position:absolute;
+    right : 10px;
+    top : 0px;
+}
+.weather h6{
+    font-size: 15px;
+    font-weight: 300;
+    color : rgba(255,255,255,0.8);
+}
+
+.hidden{
+    display : none;
+}
